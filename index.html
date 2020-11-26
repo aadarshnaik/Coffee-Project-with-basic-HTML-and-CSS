@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeDay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Baloo Bhaina 2', cursive;
+            background: url(bg.png);
+            color: rgb(7, 7, 7);
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 34px;
+            top: 15px;
+        }
+
+        .left img {
+            width: 85px;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 0px;
+            font-size: 18px;
+        }
+
+        .mid {
+            display: block;
+            /* border: 2px solid rgb(11, 233, 22); */
+            margin: 12px auto;
+            width: 45%;
+
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 2px solid rgb(90, 23, 214); */
+            position: absolute;
+            right: 34px;
+            top: 15px;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: rgb(70, 33, 2);
+            color: rgb(248, 238, 238);
+            padding: 4px 13px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Baloo Bhaina 2', cursive;
+        }
+
+        .btn:hover {
+            color: black;
+            background-color: rgb(253, 252, 251);
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: rgb(2, 2, 2);
+            text-decoration: none;
+            padding: 0px 30px;
+            /* border: 2px solid black; */
+        }
+
+        .navbar li a:hover {
+            /* text-decoration: underline; */
+            color: white;
+            background-color: rgb(94, 40, 40);
+            border: 2px solid rgb(94, 40, 40);
+            border-radius: 200px;
+        }
+
+        .container {
+            margin: 52px 167px;
+            padding: 22px 10px;
+            width: 30%;
+            /* border: 3px solid chocolate; */
+            border-radius: 20px;
+        }
+
+        .container h1 {
+            font-family: 'Lobster', cursive;
+            text-align: center;
+            margin: 2px 4px;
+            color: rgb(70, 33, 2);
+        }
+
+        .formgrp input {
+
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid rgb(12, 12, 12);
+            margin: 10px auto;
+            font-size: 24px;
+            border-radius: 10px;
+            font-family: 'Baloo Bhaina 2', cursive;
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 508px;
+            margin: auto;
+            font-size: 22px;
+        }
+
+        .container button:hover {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="mug.png" alt="Coffee mug">
+            <div>CoffeeDay</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Coffee</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us now</button><button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Fall in Love with Coffee</h1>
+        <form action="noaction.php"></form>
+        <div class="formgrp">
+            <label for="name"><input type="text" name="Name" id="name" placeholder="Enter your Name"></label>
+        </div>
+        <div class="formgrp">
+            <label for="name"><input type="text" name="Age" id="Age" placeholder="Enter your Age"></label>
+        </div>
+        <div class="formgrp">
+            <label for="name"><input type="text" name="gender" id="gender" placeholder="Enter your Gender"></label>
+        </div>
+        <div class="formgrp">
+            <label for="name"><input type="text" name="Locality" id="Locality" placeholder="Enter Locality"></label>
+        </div>
+        <div class="formgrp">
+            <label for="name"><input type="text" name="Mobile" id="Mobile" placeholder="Enter Mobile no"></label>
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
